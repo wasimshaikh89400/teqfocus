@@ -6,7 +6,7 @@ try:
     for line in fn:
         keys, description = line.split(" ", 1)
         newKey = keys.replace(":", "")
-        dictionary.append({"id": newKey, "data": description.strip()})
+        dictionary.append({"id": int(newKey), "data": description.strip()})
 
     print(dictionary)
 except:
