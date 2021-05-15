@@ -6,6 +6,9 @@ myDB = myConnection["StudentDatabase"] #create database for student data
 
 myTable = myDB["studentData"] # Create collection For student
 
-x = myTable.find_one({}, {"Roll_no" : "51" , "firstName":1 , "lastname" :1 , "DOB" : 1 , "class" : 1 })
+query = {"Roll_no" : "4"}
 
-print(x)
+x = myTable.find(query)
+
+for y in x:
+  print(y)
