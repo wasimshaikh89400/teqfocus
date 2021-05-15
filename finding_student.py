@@ -6,7 +6,7 @@ myDB = myConnection["StudentDatabase"] #create database for student data
 
 myTable = myDB["studentData"] # Create collection For student
 
-query = {"Roll_no" : "4"}
+query = {"Roll_no" : "51"}
 
 x = myTable.find(query)
 
